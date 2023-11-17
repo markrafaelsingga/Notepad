@@ -22,7 +22,6 @@ namespace Lastname_pad
             cutToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.X;
             selectToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.A;
             toolStripStatusLabel1.Text = "Ready";
-            richTextBox1.TextChanged += (sender, e) => changesMade = true;
         }
         private void UpdateStatusLabel(string status)
         {
@@ -169,6 +168,11 @@ namespace Lastname_pad
                     e.Cancel = true; 
                 }
             }    
-        }    
+        }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+            changesMade = true;
+        }
     }
 }

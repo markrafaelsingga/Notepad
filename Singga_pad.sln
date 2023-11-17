@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.33328.57
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lastname_pad", "Lastname_pad\Lastname_pad.csproj", "{87C90C7A-A03F-489B-AB02-E06C597D80EB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singga_pad", "Lastname_pad\Singga_pad.csproj", "{87C90C7A-A03F-489B-AB02-E06C597D80EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
