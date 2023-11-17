@@ -15,12 +15,6 @@ namespace Lastname_pad
         public Form1()
         {
             InitializeComponent();
-            undoToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.Z;
-            redoToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.Y;
-            copyToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.C;
-            pasteToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.V;
-            cutToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.X;
-            selectToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.A;
             toolStripStatusLabel1.Text = "Ready";
         }
         private void UpdateStatusLabel(string status)
@@ -30,6 +24,7 @@ namespace Lastname_pad
         }
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            richTextBox1.Text = "";
 
         }
 
@@ -173,6 +168,10 @@ namespace Lastname_pad
         private void richTextBox1_TextChanged(object sender, EventArgs e)
         {
             changesMade = true;
+            if (string.IsNullOrEmpty(richTextBox1.Text))
+            {
+                changesMade = false;
+            }
         }
     }
 }
